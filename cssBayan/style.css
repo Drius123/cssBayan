@@ -1,29 +1,30 @@
-img{
-	width: 300px;
-	height: auto;
-}
 body{
 	background-color: bisque;
 }
 h1{
 	color: black;
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 800;
 }
 a{
 	color: blue;
-	font-size: 17px;
+	font-size: 1rem;
 	font-weight: 700;
-	width: 580px;
+	width: 40rem;
+	transition: all 0.5s ease 0s;
 }
 .container{
 	margin: 0 auto;
-	width: 600px;
+	width: 45rem;
 	display: flex;
 	flex-direction: column;
 }
 .plus{
-	width: 20px;
+	width: 1rem;
+	height: auto;
+}
+.krest{
+	width: 1rem;
 	height: auto;
 }
 .meme{
@@ -33,10 +34,76 @@ a{
 .meme-link{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 10px;
-	border-top: 1px solid rgb(226, 226, 226);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-top: 0.1rem solid rgb(226, 226, 226);
+}
+.meme-link .plus, .krest{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
 }
 .container:hover{
 	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+.container:hover .plus{
+	opacity: 1;
+	transition: all 0.5s ease 0s;
+}
+.container:hover a{
+	color:black;
+	transition: all 0.5s ease 0s;
+}
+.meme-one,.meme-two,.meme-three,.meme-four,.meme-five{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.meme-img-one,.meme-img-two,.meme-img-three,.meme-img-four,.meme-img-five{
+	height: 0;
+	transition: all 0.5s ease 0s;
+}
+.meme-one:hover .meme-img-one{
+	height: 316px;
+	transition: all 0.5s ease 0s;
+}
+.meme-one:hover .plus{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+}
+.meme-one:hover .krest{
+	opacity: 1;
+	transition: all 0.5s ease 0s;
+}
+.meme-two:hover .plus{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+}
+.meme-two:hover .krest{
+	opacity: 1;
+	transition: all 0.5s ease 0s;
+}
+.meme-three:hover .plus{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+}
+.meme-three:hover .krest{
+	opacity: 1;
+	transition: all 0.5s ease 0s;
+}
+.meme-two:hover .meme-img-two{
+	height: 292px;
+	transition: all 0.5s ease 0s;
+}
+.meme-three:hover .meme-img-three{
+	height: 300px;
+	transition: all 0.5s ease 0s;
+}
+.meme-four:hover .meme-img-four{
+	height: 235px;
+	transition: all 0.5s ease 0s;
+}
+.meme-five:hover .meme-img-five{
+	height: 220px;
 	transition: all 0.5s ease 0s;
 }
