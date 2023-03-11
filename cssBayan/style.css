@@ -2,10 +2,41 @@ img{
 	width: 300px;
 	height: auto;
 }
+body{
+	background-color: bisque;
+}
+h1{
+	color: black;
+	font-size: 30px;
+	font-weight: 800;
+}
+a{
+	color: blue;
+	font-size: 17px;
+	font-weight: 700;
+	width: 580px;
+}
 .container{
 	margin: 0 auto;
+	width: 600px;
 	display: flex;
 	flex-direction: column;
-	width: 500px;
-	align-items: center;
+}
+.plus{
+	width: 20px;
+	height: auto;
+}
+.meme{
+	display: flex;
+	flex-direction: column;
+}
+.meme-link{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	border-top: 1px solid rgb(226, 226, 226);
+}
+.container:hover{
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
 }
