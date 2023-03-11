@@ -59,12 +59,13 @@ a{
 	align-items: center;
 	flex-direction: column;
 }
+
 .meme-img-one,.meme-img-two,.meme-img-three,.meme-img-four,.meme-img-five{
 	height: 0;
 	transition: all 0.5s ease 0s;
 }
 .meme-one:hover .meme-img-one{
-	height: 316px;
+	height: 20rem;
 	transition: all 0.5s ease 0s;
 }
 .meme-one:hover .plus{
@@ -91,19 +92,85 @@ a{
 	opacity: 1;
 	transition: all 0.5s ease 0s;
 }
+.meme-four:hover .plus{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+}
+.meme-four:hover .krest{
+	opacity: 1;
+	transition: all 0.5s ease 0s;
+}
+.meme-five:hover .plus{
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+}
+.meme-five:hover .krest{
+	opacity: 1;
+	transition: all 0.5s ease 0s;
+}
 .meme-two:hover .meme-img-two{
-	height: 292px;
+	height: 19rem;
 	transition: all 0.5s ease 0s;
 }
 .meme-three:hover .meme-img-three{
-	height: 300px;
+	height: 19rem;
 	transition: all 0.5s ease 0s;
 }
 .meme-four:hover .meme-img-four{
-	height: 235px;
+	height: 15rem;
 	transition: all 0.5s ease 0s;
 }
 .meme-five:hover .meme-img-five{
-	height: 220px;
+	height: 14rem;
 	transition: all 0.5s ease 0s;
+}
+.meme-one:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-two:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-three:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-four:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-five:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-one:focus-within .meme-img-one{
+	height: 20rem;
+}
+.meme-one:focus-within a{
+	color: black;
+}
+.meme-two:focus-within .meme-img-two{
+	height: 19rem;
+}
+.meme-two:focus-within a{
+	color: black;
+}
+.meme-three:focus-within .meme-img-three{
+	height: 19rem;
+}
+.meme-three:focus-within a{
+	color: black;
+}
+.meme-four:focus-within .meme-img-four{
+	height: 15rem;
+}
+.meme-four:focus-within a{
+	color: black;
+}
+.meme-five:focus-within .meme-img-five{
+	height: 14rem;
+}
+.meme-five:focus-within a{
+	color: black;
 }
