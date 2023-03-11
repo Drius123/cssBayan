@@ -3,28 +3,32 @@ body{
 }
 h1{
 	color: black;
-	font-size: 2rem;
+	font-size: 4rem;
 	font-weight: 800;
+	padding-left: 20px;
 }
 a{
 	color: blue;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 700;
-	width: 40rem;
+	width: 60rem;
 	transition: all 0.5s ease 0s;
+}
+button{
+	width: 100%;
 }
 .container{
 	margin: 0 auto;
-	width: 45rem;
+	width: 65rem;
 	display: flex;
 	flex-direction: column;
 }
 .plus{
-	width: 1rem;
+	width: 2rem;
 	height: auto;
 }
 .krest{
-	width: 1rem;
+	width: 2rem;
 	height: auto;
 }
 .meme{
@@ -34,13 +38,17 @@ a{
 .meme-link{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 1rem;
+	padding-top: 2rem;
 	padding-bottom: 1rem;
 	border-top: 0.1rem solid rgb(226, 226, 226);
 }
-.meme-link .plus, .krest{
+.plus, .krest{
 	opacity: 0;
 	transition: all 0.5s ease 0s;
+}
+.krest{
+	width: 0;
+	height: 0;
 }
 .container:hover{
 	cursor: pointer;
@@ -70,42 +78,62 @@ a{
 }
 .meme-one:hover .plus{
 	opacity: 0;
+	width: 0;
+	height: 0;
 	transition: all 0.5s ease 0s;
 }
 .meme-one:hover .krest{
 	opacity: 1;
+	width: 2rem;
+	height: auto;
 	transition: all 0.5s ease 0s;
 }
 .meme-two:hover .plus{
 	opacity: 0;
+	width: 0;
+	height: 0;
 	transition: all 0.5s ease 0s;
 }
 .meme-two:hover .krest{
 	opacity: 1;
+	width: 2rem;
+	height: auto;
 	transition: all 0.5s ease 0s;
 }
 .meme-three:hover .plus{
 	opacity: 0;
+	width: 0;
+	height: 0;
 	transition: all 0.5s ease 0s;
 }
 .meme-three:hover .krest{
 	opacity: 1;
+	width: 2rem;
+	height: auto;
 	transition: all 0.5s ease 0s;
 }
 .meme-four:hover .plus{
 	opacity: 0;
+	width: 0;
+	height: 0;
 	transition: all 0.5s ease 0s;
 }
 .meme-four:hover .krest{
 	opacity: 1;
+	width: 2rem;
+	height: auto;
 	transition: all 0.5s ease 0s;
 }
 .meme-five:hover .plus{
 	opacity: 0;
+	width: 0;
+	height: 0;
 	transition: all 0.5s ease 0s;
 }
 .meme-five:hover .krest{
 	opacity: 1;
+	width: 2rem;
+	height: auto;
 	transition: all 0.5s ease 0s;
 }
 .meme-two:hover .meme-img-two{
@@ -123,26 +151,6 @@ a{
 .meme-five:hover .meme-img-five{
 	height: 14rem;
 	transition: all 0.5s ease 0s;
-}
-.meme-one:active a {
-	color: blue;
-	transition: all 0s ease 0s;
-}
-.meme-two:active a {
-	color: blue;
-	transition: all 0s ease 0s;
-}
-.meme-three:active a {
-	color: blue;
-	transition: all 0s ease 0s;
-}
-.meme-four:active a {
-	color: blue;
-	transition: all 0s ease 0s;
-}
-.meme-five:active a {
-	color: blue;
-	transition: all 0s ease 0s;
 }
 .meme-one:focus-within .meme-img-one{
 	height: 20rem;
@@ -173,4 +181,27 @@ a{
 }
 .meme-five:focus-within a{
 	color: black;
+}
+.meme-one:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-two:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-three:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-four:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+.meme-five:active a {
+	color: blue;
+	transition: all 0s ease 0s;
+}
+@media (max-width: 820px){
+
 }
