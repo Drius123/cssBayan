@@ -448,21 +448,21 @@ a{
 		.meme-five:hover .meme-img-five{
 			height: 10rem;
 		}
-		.meme-one:focus-within .meme-img-one{
-			height: 10rem;
-		}
-		.meme-two:focus-within .meme-img-two{
-			height: 10rem;
-		}
-		.meme-three:focus-within .meme-img-three{
-			height: 10rem;
-		}
-		.meme-four:focus-within .meme-img-four{
-			height: 10rem;
-		}
-		.meme-five:focus-within .meme-img-five{
-			height: 10rem;
-		}
+	}
+	.meme-one:focus-within .meme-img-one{
+		height: 15rem;
+	}
+	.meme-two:focus-within .meme-img-two{
+		height: 15rem;
+	}
+	.meme-three:focus-within .meme-img-three{
+		height: 15rem;
+	}
+	.meme-four:focus-within .meme-img-four{
+		height: 15rem;
+	}
+	.meme-five:focus-within .meme-img-five{
+		height: 15rem;
 	}
 }
 @media (max-width: 400px){
